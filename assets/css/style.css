@@ -6,8 +6,9 @@
 }
 
 :root {
-  --color-accent: #d1b28b;
+  --color-accent: #72a03b;
   --color-text: #1c1c1c;
+  --color-bg: #687f84;
 }
 
 h1,
@@ -87,8 +88,8 @@ body {
   z-index: -1;
 }
 
-.ly_heroFv > img,
-.ly_heroFv > div:has(video) {
+.ly_heroFv>img,
+.ly_heroFv>div:has(video) {
   position: absolute;
   height: auto;
   z-index: -5;
@@ -102,6 +103,7 @@ body {
     opacity: 0;
     filter: blur(8px);
   }
+
   100% {
     opacity: 1;
     filter: blur(0);
@@ -245,6 +247,7 @@ body {
   transform: translate(-50%, -50%);
   height: 80%;
   width: 70%;
+  z-index: -2;
 }
 
 .ly_heroMap img {
@@ -252,6 +255,12 @@ body {
   width: auto;
   object-fit: contain;
   margin-inline: auto;
+}
+
+.ly_hero__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .ly_hero__title img {
@@ -338,7 +347,7 @@ body {
   aspect-ratio: 340 / 142;
 }
 
-.bl_featureImg > div {
+.bl_featureImg>div {
   position: absolute;
   height: auto;
 }
@@ -385,7 +394,7 @@ body {
 
 .ly_culture {
   color: #fff;
-  background: var(--color-text);
+  background: var(--color-bg);
   padding: 72px 23px;
 }
 
@@ -415,7 +424,7 @@ body {
   margin-block: 36px 48px;
 }
 
-.bl_cultureImages > div {
+.bl_cultureImages>div {
   position: absolute;
   height: auto;
 }
@@ -499,6 +508,12 @@ body {
 
 .bl_accessMap {
   margin-block: 16px 22px;
+  text-align: center;
+}
+
+.bl_accessMap img {
+  margin-inline: auto;
+  display: block;
 }
 
 .bl_accessTop {
@@ -670,7 +685,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: var(--color-text);
+  background: var(--color-accent);
   color: #fff;
   padding: 13px 20px;
   font-size: 18px;
@@ -1188,7 +1203,7 @@ body {
     margin-top: 32px;
   }
 
-  .bl_voicesList > * {
+  .bl_voicesList>* {
     height: 600px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -1196,7 +1211,7 @@ body {
     -ms-overflow-style: none;
   }
 
-  .bl_voicesList > *::-webkit-scrollbar {
+  .bl_voicesList>*::-webkit-scrollbar {
     display: none;
   }
 

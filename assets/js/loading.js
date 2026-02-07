@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
   const elapsedTime = Date.now() - loadingStartTime;
 
   // Check if user has visited before
-  const hasVisited = localStorage.getItem("noto-visited");
+  const hasVisited = localStorage.getItem("okinawa-visited");
   const minimumLoadingTime = hasVisited ? 0 : 10000; // 10 seconds for first visit, 0 for returning visitors
   const remainingTime = Math.max(0, minimumLoadingTime - elapsedTime);
 
@@ -22,6 +22,6 @@ window.addEventListener("load", function () {
 
   // Mark as visited for future visits
   if (!hasVisited) {
-    localStorage.setItem("noto-visited", "true");
+    localStorage.setItem("okinawa-visited", "true");
   }
 });
