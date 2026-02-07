@@ -352,6 +352,10 @@ body {
   height: auto;
 }
 
+.bl_featureImg img {
+  border-radius: 4px;
+}
+
 .feature_img1 {
   width: 39vw;
   top: 0;
@@ -427,6 +431,10 @@ body {
 .bl_cultureImages>div {
   position: absolute;
   height: auto;
+}
+
+.bl_culture img {
+  border-radius: 6px;
 }
 
 .culture_img1 {
