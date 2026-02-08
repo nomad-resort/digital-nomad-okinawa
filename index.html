@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./assets/css/loading.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/event-popup.css" />
 </head>
 
 <body>
@@ -41,6 +42,22 @@
     <section class="ly_hero">
       <div class="ly_heroBg">
         <img src="./assets/image/hero-bg.webp" loading="eager" fetchpriority="high" alt="Bonfire at night" />
+      </div>
+
+      <!-- Event announcement popup -->
+      <div class="event-popup">
+        <div class="event-popup-content">
+          <button class="event-popup-close" aria-label="Close event notification">×</button>
+          <div class="event-popup-header">
+            <span class="event-popup-badge">🎉 NEW EVENT</span>
+          </div>
+          <h3 class="event-popup-title">Nomad Resort Okinawa 2026</h3>
+          <p class="event-popup-description">
+            9th-23rd November 2026
+          </p>
+          <a href="https://okinawa.nomadresort-x.com/" target="_blank" rel="noopener noreferrer"
+            class="event-popup-link">Check it out →</a>
+        </div>
       </div>
       <!-- NotoのWebとは異なり、爽やかな印象にするために、トップの画像はシンプルに海の画像だけにする -->
       <!-- <div class="ly_heroFv">
@@ -522,6 +539,7 @@
       document.body.appendChild(script2);
     });
   </script>
+  <script src="./assets/js/event-popup.js" defer></script>
 </body>
 
 </html>
