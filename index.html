@@ -8,6 +8,23 @@
   <link rel="icon" type="image/x-icon" href="./assets/image/favi_okinawa.ico">
   <link rel="apple-touch-icon" href="./assets/image/favi_okinawa.ico">
 
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://okinawa.nomadresort.jp/" />
+  <link rel="alternate" hreflang="en" href="https://okinawa.nomadresort.jp/" />
+  <link rel="alternate" hreflang="ja" href="https://okinawa.nomadresort.jp/ja/" />
+  <link rel="alternate" hreflang="zh" href="https://okinawa.nomadresort.jp/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://okinawa.nomadresort.jp/" />
+
+  <!-- Browser Language Auto-Redirect -->
+  <script>
+    (function () {
+      if (localStorage.getItem('lang')) return;
+      var lang = navigator.language.slice(0, 2);
+      if (lang === 'ja' && !window.location.pathname.includes('/ja/')) window.location.replace('/ja/');
+      if (lang === 'zh' && !window.location.pathname.includes('/zh/')) window.location.replace('/zh/');
+    })();
+  </script>
+
   <!-- OGP Settings -->
   <meta property="og:title" content="Digital Nomad Okinawa - Peaceful Islands for Digital Nomads" />
   <meta property="og:description"
@@ -39,6 +56,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/event-popup.css" />
+  <link rel="stylesheet" href="./assets/css/lang-switcher.css" />
 </head>
 
 <body>
@@ -556,6 +574,40 @@
     });
   </script>
   <script src="./assets/js/event-popup.js" defer></script>
+
+  <!-- Language Switcher -->
+  <div class="bl_langSwitcher">
+    <button class="bl_langSwitcherToggle" aria-label="Switch language">EN</button>
+    <div class="bl_langSwitcherDropdown">
+      <a class="bl_langSwitcherItem is_active" href="./" onclick="localStorage.setItem('lang','en')">English</a>
+      <a class="bl_langSwitcherItem" href="./ja/" onclick="localStorage.setItem('lang','ja')">日本語</a>
+      <a class="bl_langSwitcherItem" href="./zh/" onclick="localStorage.setItem('lang','zh')">中文</a>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.bl_langSwitcherToggle');
+      var dropdown = document.querySelector('.bl_langSwitcherDropdown');
+
+      // 初期状態でメニューを開く
+      dropdown.classList.add('is_open');
+
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('is_open');
+      });
+      document.addEventListener('click', function () {
+        dropdown.classList.remove('is_open');
+      });
+
+      // スクロール時にメニューを閉じる
+      window.addEventListener('scroll', function () {
+        if (dropdown.classList.contains('is_open')) {
+          dropdown.classList.remove('is_open');
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
 
 </html>

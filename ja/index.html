@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>デジタルノマド沖縄</title>
+    <link rel="icon" type="image/x-icon" href="../assets/image/favi_okinawa.ico">
+    <link rel="apple-touch-icon" href="../assets/image/favi_okinawa.ico">
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://okinawa.nomadresort.jp/ja/" />
+    <link rel="alternate" hreflang="en" href="https://okinawa.nomadresort.jp/" />
+    <link rel="alternate" hreflang="ja" href="https://okinawa.nomadresort.jp/ja/" />
+    <link rel="alternate" hreflang="zh" href="https://okinawa.nomadresort.jp/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://okinawa.nomadresort.jp/" />
+
+    <!-- Browser Language Auto-Redirect -->
+    <script>
+        (function () {
+            if (localStorage.getItem('lang')) return;
+            var lang = navigator.language.slice(0, 2);
+            if (lang === 'ja' && !window.location.pathname.includes('/ja/')) window.location.replace('/ja/');
+            if (lang === 'zh' && !window.location.pathname.includes('/zh/')) window.location.replace('/zh/');
+        })();
+    </script>
+
+    <!-- OGP Settings -->
+    <meta property="og:title" content="デジタルノマド沖縄 - デジタルノマドのための癒しの島" />
+    <meta property="og:description" content="沖縄でリラックスし、探索し、成長しましょう。豊かな琉球文化、美しいビーチ、活気あるコミュニティが待つ、日本の隠れた楽園を発見してください。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://okinawa.nomadresort.jp/ja/" />
+    <meta property="og:image" content="https://okinawa.nomadresort.jp/assets/image/ogp.png" />
+    <meta property="og:site_name" content="デジタルノマド沖縄" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="デジタルノマド沖縄 - デジタルノマドのための癒しの島" />
+    <meta name="twitter:description" content="沖縄でリラックスし、探索し、成長しましょう。日本の隠れた楽園を発見してください。" />
+    <meta name="twitter:image" content="https://okinawa.nomadresort.jp/assets/image/ogp.png" />
+
+    <!-- Preconnect to external resources for better performance -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
+    <link rel="preconnect" href="https://www.instagram.com" crossorigin />
+    <link rel="preconnect" href="https://elfsightcdn.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://www.google.com" />
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+    <link rel="dns-prefetch" href="https://elfsightcdn.com" />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/loading.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/event-popup.css" />
+    <link rel="stylesheet" href="../assets/css/lang-switcher.css" />
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <img src="../assets/image/hero-okinawa.svg" alt="OKINAWA" class="loading-logo" />
+            <p class="loading-text">Now Loading...</p>
+        </div>
+        <div class="loading-map">
+            <img src="../assets/image/hero-map.webp" alt="沖縄の地図" />
+        </div>
+    </div>
+
+    <header></header>
+    <main>
+        <section class="ly_hero">
+            <div class="ly_heroBg">
+                <img src="../assets/image/hero-bg.webp" loading="eager" fetchpriority="high" alt="夜の焚き火" />
+            </div>
+
+            <!-- Event announcement popup -->
+            <div class="event-popup">
+                <div class="event-popup-content">
+                    <button class="event-popup-close" aria-label="イベント通知を閉じる">×</button>
+                    <div class="event-popup-header">
+                        <span class="event-popup-badge">🎉 新イベント</span>
+                    </div>
+                    <h3 class="event-popup-title">ノマドリゾート沖縄 2026</h3>
+                    <p class="event-popup-description">
+                        2026年11月9日〜23日
+                    </p>
+                    <a href="https://okinawa.nomadresort-x.com/" target="_blank" rel="noopener noreferrer"
+                        class="event-popup-link">詳しく見る →</a>
+                </div>
+            </div>
+            <div class="ly_heroMap">
+                <img src="../assets/image/hero-map.webp" fetchpriority="high" loading="eager" alt="沖縄の地図" />
+            </div>
+            <div class="ly_hero__inner">
+                <div class="ly_hero__title">
+                    <img src="../assets/image/hero-okinawa.svg" loading="eager" fetchpriority="high" alt="OKINAWA" />
+                </div>
+                <p class="ly_hero__subtitle">デジタルノマドのための癒しの島</p>
+            </div>
+        </section>
+
+        <section class="ly_feature">
+            <div class="bl_feature">
+                <div class="bl_featureHeader">
+                    <h2>沖縄はなぜ特別なのか？</h2>
+                    <iframe width="1840" height="1035" src="https://www.youtube.com/embed/eBpE9BBSkf8" title="ノマドリゾート沖縄"
+                        loading="lazy" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="bl_featureContent">
+                    <div class="bl_featureImg">
+                        <div class="feature_img1">
+                            <img loading="lazy" src="../assets/image/hero-img1.webp" alt="" />
+                        </div>
+                        <div class="feature_img2">
+                            <img loading="lazy" src="../assets/image/hero-img2.webp" alt="" />
+                        </div>
+                        <div class="feature_img3">
+                            <img loading="lazy" src="../assets/image/hero-img3.webp" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="bl_featureTxt">
+                        <h3>都道府県別<br />幸福度ランキング日本一</h3>
+                        <p>
+                            沖縄は年間を通じて温暖な気候に恵まれ、海・山・川の美しい自然が広がっています。<br />
+                            日本を代表するリゾート地であり、世界有数の長寿地域としても知られています。
+                        </p>
+                    </div>
+
+                    <div class="bl_featureImg bl_featureImgBottom">
+                        <div class="feature_img4">
+                            <img loading="lazy" src="../assets/image/hero-img4.webp" alt="" />
+                        </div>
+                        <div class="feature_img5">
+                            <img loading="lazy" src="../assets/image/hero-img5.webp" alt="" />
+                        </div>
+                        <div class="feature_img6">
+                            <img loading="lazy" src="../assets/image/hero-img6.webp" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="bl_featureFooter">
+                        <p>Discover</p>
+                        <p>Ikigai islands in Japan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly_culture">
+            <div class="bl_culture">
+                <div class="bl_cultureTop">
+                    <div class="bl_cultureTopText">
+                        <h2>
+                            豊かな琉球文化
+                        </h2>
+                        <p>
+                            本土とは異なる独自の琉球文化を体験してください。<br />
+                            自然と共に暮らす人々が築いた、バランスのとれた生き方がここにあります。
+                        </p>
+                    </div>
+                    <div class="bl_cultureTopImg">
+                        <img loading="lazy" src="../assets/image/culture-img1.webp" alt="" />
+                    </div>
+                </div>
+
+                <div class="bl_cultureImages">
+                    <div class="culture_img1">
+                        <img loading="lazy" src="../assets/image/culture-img2.webp" alt="" />
+                    </div>
+                    <div class="culture_img2">
+                        <img loading="lazy" src="../assets/image/culture-img3.webp" alt="" />
+                    </div>
+                    <div class="culture_img3">
+                        <img loading="lazy" src="../assets/image/culture-img4.webp" alt="" />
+                    </div>
+                </div>
+
+                <div class="bl_cultureImgBig">
+                    <img loading="lazy" src="../assets/image/culture-img5.webp" alt="" />
+                </div>
+
+                <div class="bl_cultureBottom">
+                    <h2>
+                        世界トップクラスのダイビングスポット<br />
+                        ＆ユニークな食文化
+                    </h2>
+
+                    <div class="bl_cultureBottomCta">
+                        <img loading="lazy" src="../assets/image/culture-img6.webp" alt="Discordに参加" />
+                        <div class="bl_cultureBottomCtaText">
+                            <h3>沖縄デジタルノマドコミュニティへ</h3>
+                            <p>
+                                スケジュール、マップ、ヒントなど、<br />
+                                すべてがDiscordの中にあります。
+                            </p>
+                        </div>
+                    </div>
+                    <a class="link_btn" href="https://discord.gg/7NPtnvm82M">
+                        <p>
+                            <b>Discordコミュニティ</b>
+                        </p>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#link_arr)">
+                                <path
+                                    d="M8 2.5c0 .371.367.925.738 1.39a6.6 6.6 0 0 0 1.7 1.523c.49.3 1.084.587 1.562.587m0 0c-.478 0-1.072.287-1.562.587-.654.4-1.224.924-1.7 1.523C8.367 8.575 8 9.13 8 9.5M12 6H0"
+                                    stroke="#fff" />
+                            </g>
+                            <defs>
+                                <clipPath id="link_arr">
+                                    <path fill="#fff" d="M12 0H0v12h12z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly_access">
+            <div class="bl_access">
+                <div class="bl_accessTop">
+                    <h2 class="hp_title">アクセス</h2>
+                    <p>バンコク、シンガポール、台北、ソウル、香港などの主要都市から直行便があります。</p>
+                </div>
+                <div class="bl_accessMap">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/image/access-map-pc.png" />
+                        <img loading="lazy" src="../assets/image/access-map-sp.png" alt="" />
+                    </picture>
+                </div>
+                <div class="bl_accessList">
+                    <div class="bl_accessListItem">
+                        <div class="bl_accessListIcon">
+                            <img loading="lazy" src="../assets/image/access-plane.svg" alt="" />
+                        </div>
+                        <div class="bl_accessListContent">
+                            <h3>東京から</h3>
+                            <ol>
+                                <li>
+                                    羽田/成田 → 那覇空港：約2.5時間（飛行機）
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bl_accessListItem">
+                        <div class="bl_accessListIcon">
+                            <img loading="lazy" src="../assets/image/access-plane.svg" alt="" />
+                        </div>
+                        <div class="bl_accessListContent">
+                            <h3>福岡から</h3>
+                            <ol>
+                                <li>
+                                    福岡 → 那覇空港：約2時間（飛行機）
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bl_accessListItem">
+                        <div class="bl_accessListIcon">
+                            <img loading="lazy" src="../assets/image/access-plane.svg" alt="" />
+                        </div>
+                        <div class="bl_accessListContent">
+                            <h3>海外から</h3>
+                            <ol>
+                                <li>
+                                    ソウル → 那覇：約2時間
+                                </li>
+                                <li>
+                                    台北 → 那覇：約1.5時間
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bl_accessListItem">
+                        <div class="bl_accessListIcon">
+                            <img loading="lazy" src="../assets/image/access-car.svg" alt="" />
+                        </div>
+                        <div class="bl_accessListContent">
+                            <h3>車またはバス</h3>
+                            <ol>
+                                <li>
+                                    那覇 → 名護・やんばるなど：車で60〜90分
+                                </li>
+                                <li>
+                                    那覇 → 名護・やんばるなど：バスで120〜150分
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_accessFrame">
+                    <iframe title="沖縄マップ"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924502.4288799377!2d127.0!3d26.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569f30b949cdb%3A0x4e6e3e8b1c6e6b0a!2sOkinawa%20Prefecture!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                        width="330" height="160" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly_accommodation">
+            <div class="bl_accommodation">
+                <h2 class="hp_title">宿泊施設</h2>
+                <div class="bl_gallerySwiper">
+                    <div class="swiper gallerySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img1.webp" alt="宿泊施設 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img2.webp" alt="宿泊施設 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img3.webp" alt="宿泊施設 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img4.webp" alt="宿泊施設 4" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img5.webp" alt="宿泊施設 5" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/accommodation-img6.webp" alt="宿泊施設 6" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                            <div class="swiper-button-next">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="link_btn"
+                    href="https://vast-soul-1ed.notion.site/NRO-Accommodations-Nago-city-24a1f96a364381d98ee9c69255649ee9?source=copy_link">
+                    <p>
+                        <b>おすすめの宿泊施設<br>（Notion）</b>
+                    </p>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#link_arr)">
+                            <path
+                                d="M8 2.5c0 .371.367.925.738 1.39a6.6 6.6 0 0 0 1.7 1.523c.49.3 1.084.587 1.562.587m0 0c-.478 0-1.072.287-1.562.587-.654.4-1.224.924-1.7 1.523C8.367 8.575 8 9.13 8 9.5M12 6H0"
+                                stroke="#fff" />
+                        </g>
+                        <defs>
+                            <clipPath id="link_arr">
+                                <path fill="#fff" d="M12 0H0v12h12z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="ly_coworking">
+            <div class="bl_accommodation">
+                <h2 class="hp_title">コワーキングスペース</h2>
+                <div class="bl_gallerySwiper">
+                    <div class="swiper gallerySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/image/coworking-img1.webp" alt="コワーキングスペース 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/coworking-img2.webp" alt="コワーキングスペース 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/coworking-img3.webp" alt="コワーキングスペース 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/coworking-img4.webp" alt="コワーキングスペース 4" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/image/coworking-img5.webp" alt="コワーキングスペース 5" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                            <div class="swiper-button-next">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="link_btn"
+                    href="https://vast-soul-1ed.notion.site/NRO-Accommodations-Nago-city-24a1f96a364381d98ee9c69255649ee9?source=copy_link">
+                    <b>おすすめのコワーキングスペース<br>（Notion）</b>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#link_arr)">
+                            <path
+                                d="M8 2.5c0 .371.367.925.738 1.39a6.6 6.6 0 0 0 1.7 1.523c.49.3 1.084.587 1.562.587m0 0c-.478 0-1.072.287-1.562.587-.654.4-1.224.924-1.7 1.523C8.367 8.575 8 9.13 8 9.5M12 6H0"
+                                stroke="#fff" />
+                        </g>
+                        <defs>
+                            <clipPath id="link_arr">
+                                <path fill="#fff" d="M12 0H0v12h12z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="ly_voices">
+            <div class="bl_voices">
+                <h2 class="hp_title">ノマドたちの声</h2>
+                <div class="bl_voicesSwiper">
+                    <div class="swiper voicesSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- No.1 on SP ver -->
+                            <div class="swiper-slide">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DSPFJBxkifv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    data-instgrm-version="14"></blockquote>
+                            </div>
+                            <!-- No.2 on SP ver -->
+                            <div class="swiper-slide">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DSuscQTk88K/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    data-instgrm-version="14"></blockquote>
+                            </div>
+                            <!-- No.3 on SP ver -->
+                            <div class="swiper-slide">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DSKx0u2Eg3f/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    data-instgrm-version="14"></blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                            <div class="swiper-button-next">
+                                <img loading="lazy" src="../assets/image/swiper-arrow.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_voicesList">
+                    <!-- No.1 on PC ver -->
+                    <div>
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/reel/DSPFJBxkifv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                    <!-- No.2 on PC ver -->
+                    <div>
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/reel/DSuscQTk88K/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                    <!-- No.3 on PC ver -->
+                    <div>
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/reel/DSKx0u2Eg3f/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly_instagram">
+            <div class="bl_instagram">
+                <h2 class="hp_title">Instagramをフォロー</h2>
+                <div class="bl_instagramFeed">
+                    <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+                    <div class="elfsight-app-cb890781-93d5-4ec8-b348-92df8348bc4a" data-elfsight-app-lazy></div>
+                </div>
+                <div class="bl_localSupport">
+                    <h3>あなたの滞在を<br />サポートする地元の人</h3>
+                    <img loading="lazy" src="../assets/image/support.webp" alt="" />
+                    <p>
+                        かつて世界を旅したデジタルノマドが、今は沖縄に暮らしています。<br />英語を話すことができ、質問やアドバイス、ちょっとしたおしゃべりなど、お気軽にどうぞ。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ly_join">
+            <img class="bl_joinBg" src="../assets/image/join-team.webp" alt="" />
+            <h2>チームに参加しよう</h2>
+            <div class="bl_join">
+                <div>
+                    <h3>Instagram</h3>
+                    <a class="bl_joinProfile" href="https://www.instagram.com/nomadresort_okinawa"><img
+                            src="../assets/image/icon-instagram.svg" alt="Instagram" />@nomardresort_okinawa</a>
+                    <a class="el_joinLink" href="https://www.instagram.com/nomadresort_okinawa">Instagram</a>
+                </div>
+                <div>
+                    <h3>Discord</h3>
+                    <a class="bl_joinProfile" href="https://discord.gg/7NPtnvm82M"><img
+                            src="../assets/image/icon-discord.svg" alt="Discord" />沖縄デジタル
+                        ノマドコミュニティ</a>
+                    <a class="el_joinLink" href="https://discord.gg/7NPtnvm82M">Discord</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ly_footer">
+        <div class="ly_heroBg">
+            <img src="../assets/image/hero-bg.webp" loading="eager" alt="夜の焚き火" />
+        </div>
+        <div class="ly_hero__inner">
+            <div class="ly_hero__title">
+                <img src="../assets/image/hero-okinawa.svg" loading="eager" alt="OKINAWA" />
+            </div>
+            <p class="ly_hero__subtitle">沖縄でリラックスし、探索し、成長しよう</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/loading.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js" defer></script>
+    <script src="../assets/js/swiper.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Instagram embed script
+            const script1 = document.createElement('script');
+            script1.src = 'https://www.instagram.com/embed.js';
+            script1.async = true;
+            document.body.appendChild(script1);
+
+            // Elfsight platform script
+            const script2 = document.createElement('script');
+            script2.src = 'https://elfsightcdn.com/platform.js';
+            script2.async = true;
+            document.body.appendChild(script2);
+        });
+    </script>
+    <script src="../assets/js/event-popup.js" defer></script>
+
+    <!-- Language Switcher -->
+    <div class="bl_langSwitcher">
+        <button class="bl_langSwitcherToggle" aria-label="言語切り替え">JA</button>
+        <div class="bl_langSwitcherDropdown">
+            <a class="bl_langSwitcherItem" href="../" onclick="localStorage.setItem('lang','en')">English</a>
+            <a class="bl_langSwitcherItem is_active" href="./" onclick="localStorage.setItem('lang','ja')">日本語</a>
+            <a class="bl_langSwitcherItem" href="../zh/" onclick="localStorage.setItem('lang','zh')">中文</a>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.bl_langSwitcherToggle');
+            var dropdown = document.querySelector('.bl_langSwitcherDropdown');
+
+            // 初期状態でメニューを開く
+            dropdown.classList.add('is_open');
+
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('is_open');
+            });
+            document.addEventListener('click', function () {
+                dropdown.classList.remove('is_open');
+            });
+
+            // スクロール時にメニューを閉じる
+            window.addEventListener('scroll', function () {
+                if (dropdown.classList.contains('is_open')) {
+                    dropdown.classList.remove('is_open');
+                }
+            }, { passive: true });
+        })();
+    </script>
+</body>
+
+</html>
