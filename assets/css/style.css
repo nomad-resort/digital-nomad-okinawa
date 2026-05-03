@@ -507,6 +507,144 @@ body {
 }
 
 /* ==========================================================================
+   Exchange Co-Living Feature Section
+   ========================================================================== */
+
+.ly_exchangeFeature {
+  padding: 72px 23px;
+  background: #0A0D10;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.bl_exchangeFeature {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+.bl_exchangeFeatureBadge {
+  display: inline-block;
+  background: #E8552A;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  padding: 4px 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.bl_exchangeFeatureTitle {
+  font-size: clamp(1.75rem, 1.3571rem + 1.9643vw, 3.125rem);
+  font-style: italic;
+  line-height: 1.15;
+  margin-bottom: 8px;
+  color: #E8552A;
+}
+
+.bl_exchangeFeatureSubtitle {
+  font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+  color: #7A8A94;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+
+.bl_exchangeFeatureDesc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.bl_exchangeFeatureImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.bl_exchangeFeatureImages img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bl_exchangeFeatureImages img:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 7;
+}
+
+.bl_exchangeFeatureLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #E8552A;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.bl_exchangeFeatureLink:hover {
+  background: #c94420;
+}
+
+.bl_exchangeFeatureLink svg {
+  flex-shrink: 0;
+}
+
+.bl_exchangeFeatureTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.bl_exchangeFeatureTag {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ly_exchangeFeature {
+    padding: 120px 40px;
+  }
+
+  .bl_exchangeFeatureImages {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .bl_exchangeFeatureImages img:first-child {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    aspect-ratio: 3 / 2;
+  }
+
+  .bl_exchangeFeatureImages img:not(:first-child) {
+    aspect-ratio: 4 / 3;
+  }
+
+  .bl_exchangeFeatureBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .bl_exchangeFeatureBodyRight {
+    padding-top: 16px;
+  }
+}
+
+/* ==========================================================================
    Access Section
    ========================================================================== */
 
